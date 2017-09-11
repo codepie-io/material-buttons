@@ -4,15 +4,15 @@
 $color-dark-contrast: $color-black !default;
 $color-light-contrast: $color-white !default;
 //Primary color
-$color-primary: $palette-green-500 !default;
-$color-primary-hue-1: $palette-green-300 !default;
-$color-primary-hue-2: $palette-green-600 !default;
-$color-primary-hue-3: $palette-green-100 !default;
+$color-primary: $palette-indigo-500 !default;
+$color-primary-hue-1: $palette-indigo-300 !default;
+$color-primary-hue-2: $palette-indigo-600 !default;
+$color-primary-hue-3: $palette-indigo-100 !default;
 //Accent color
-$color-accent: $palette-amber-A200 !default;
-$color-accent-hue-1: $palette-amber-100 !default;
-$color-accent-hue-2: $palette-amber-A400 !default;
-$color-accent-hue-3: $palette-amber-A700 !default;
+$color-accent: $palette-red-A200 !default;
+$color-accent-hue-1: $palette-red-100 !default;
+$color-accent-hue-2: $palette-red-A400 !default;
+$color-accent-hue-3: $palette-red-A700 !default;
 // Our primary is dark, so use $color-dark-contrast for overlaid text.
 $color-primary-contrast: $color-light-contrast !default;
 // Our accent is dark, so use $color-dark-contrast for overlaid text.

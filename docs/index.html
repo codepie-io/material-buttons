@@ -30,26 +30,29 @@
     <link href="css/docs.css" rel="stylesheet">
     <link href="vendor/highlight/styles/vs.css" rel="stylesheet">
     <style>
-        .md-col--8{
+        .md-grid-tile {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-        }
-        .md-col--4{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            /*padding-bottom: 24px;*/
         }
-        .md-row{
-            margin-top: 10px;
-            margin-bottom: 10px;
+        .md-header__menu-button{
+            width: 48px;
+            height: 48px;
+        }
+        h2{
+            padding-left: 16px
+        }
+        .md-button{
+            margin-bottom: 24px;
         }
     </style>
 </head>
 <body class="has-fixed-header md-layout md-layout--column md-align md-align--center-center" style="min-height: 100vh">
 <header class="md-header md-header--fixed md-header--primary md-header--casting-shadow md-header--casting-border md-header--has-menu-button">
-    <a class="md-header__menu-button md-button--icon" id="menu-button" href="javascript:;" data-toggle="drawer"
+    <a class="ca-button--icon md-header__menu-button md-button--icon" id="menu-button" href="javascript:;" data-toggle="drawer"
        data-target="#drawer-1">
         <i class="material-icons">menu</i>
     </a>
@@ -58,33 +61,237 @@
         <div class="md-layout-spacer"></div>
     </div>
 </header>
-<main>
-    <div class="md-container">
-        <div class="md-row">
-            <div class="md-col md-col--8">
-                <p style="margin: 0">Flat Button:</p>
+<main style="width: 100%">
+    <div class="md-container md-container--box">
+        <h2>Flat Button</h2>
+        <div class="md-grid-list">
+            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-xs">
+                <h6>Default</h6>
+                <button class="md-button" title="Default">Default</button>
             </div>
-            <div class="md-col md-col--4">
-                <button class="md-button md-button--primary">Button</button>
+            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-xs">
+                <h6>Primary Button</h6>
+                <button class="md-button md-button--primary" title="Primary Button">Primary</button>
+            </div>
+            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-xs">
+                <h6>Accent Button</h6>
+                <button class="md-button md-button--accent" title="Accent Button">Accent</button>
+            </div>
+            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-xs">
+                <h6>Compact Button</h6>
+                <button class="md-button md-button--compact" title="Compact Button">Compact</button>
+            </div>
+            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-xs">
+                <h6>Dense Default Button</h6>
+                <button class="md-button md-button--dense" title="Dense Default Button">Dense Default</button>
+            </div>
+            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-xs">
+                <h6>Large Default Button</h6>
+                <button class="md-button md-button--large" title="Large Default Button">Large Default</button>
+            </div>
+            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-xs">
+                <h6>Button with Icon</h6>
+                <button class="md-button md-button--has-icon" title="Button with Icon"><i class="material-icons">star</i> with icon</button>
+            </div>
+            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-xs">
+                <h6>Button with Icon Right</h6>
+                <button class="md-button md-button--has-icon is-right-align" title="Button with Icon Right"><i class="material-icons">menu</i> with
+                    icon
+                </button>
+            </div>
+            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-xs">
+                <h6>Disabled Button</h6>
+                <button class="md-button md-button--accent" title="Disabled Button" disabled="">Disabled</button>
             </div>
         </div>
-        <div class="md-row">
-            <div class="md-col md-col--8">
-                <p style="margin: 0">Raised button:</p>
+    </div>
+    <div class="md-container md-container--box">
+        <h2>Flat Coloured Button</h2>
+        <div class="md-grid-list">
+            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-xs">
+                <h6>Default</h6>
+                <button class="md-button md-button--flat" title="Default">Default</button>
             </div>
-            <div class="md-col md-col--4">
-                <button class="md-button md-button--primary md-button--raised">Button</button>
+            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-xs">
+                <h6>Primary Button</h6>
+                <button class="md-button md-button--primary md-button--raised md-button--flat" title="Primary Button">Primary</button>
+            </div>
+            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-xs">
+                <h6>Accent Button</h6>
+                <button class="md-button md-button--flat md-button--raised md-button--accent" title="Accent Button">Accent</button>
             </div>
         </div>
-        <div class="md-row">
-            <div class="md-col md-col--8">
-                <p style="margin: 0">Floating action button:</p>
+    </div>
+    <div class="md-container md-container--box">
+        <h2>Raised Button</h2>
+        <div class="md-grid-list">
+            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-xs">
+                <h6>Default</h6>
+                <button class="md-button md-button--raised" title="Default">Default</button>
             </div>
-            <div class="md-col md-col--4">
-                <button class="md-button md-button--primary md-button--fab"><i class="material-icons">add</i></button>
+            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-xs">
+                <h6>Primary Button</h6>
+                <button class="md-button md-button--raised md-button--primary" title="Primary Button">Primary</button>
+            </div>
+            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-xs">
+                <h6>Accent Button</h6>
+                <button class="md-button md-button--raised md-button--accent" title="Accent Button">Accent</button>
+            </div>
+            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-xs">
+                <h6>Button with Icon</h6>
+                <button class="md-button md-button--raised md-button--has-icon" title="Button with Icon"><i class="material-icons">star</i> with icon</button>
+            </div>
+            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-xs">
+                <h6>Button with Icon Right</h6>
+                <button class="md-button md-button--raised md-button--has-icon is-right-align" title="Button with Icon Right"><i class="material-icons">menu</i> with
+                    icon
+                </button>
+            </div>
+            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-xs">
+                <h6>Disabled Button</h6>
+                <button class="md-button md-button--raised md-button--accent" title="Disabled Button" disabled="">Disabled</button>
+            </div>
+        </div>
+    </div>
+    <div class="md-container md-container--box">
+        <h2>Icon Button</h2>
+        <div class="md-grid-list">
+            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-xs">
+                <h6>Default</h6>
+                <button class="md-button md-button--icon" title="Default"><i class="material-icons">star</i></button>
+            </div>
+            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-xs">
+                <h6>Primary Button</h6>
+                <button class="md-button md-button--primary md-button--icon" title="Primary Button"><i class="material-icons">star</i></button>
+            </div>
+            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-xs">
+                <h6>Accent Button</h6>
+                <button class="md-button md-button--accent md-button--icon" title="Accent Button">
+                    <i class="material-icons">star</i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="md-container md-container--box">
+        <h2>Outline Button</h2>
+        <div class="md-grid-list">
+            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-xs">
+                <h6>Default</h6>
+                <button class="md-button md-button--outline" title="Default">Default Outline</button>
+            </div>
+            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-xs">
+                <h6>Primary Button</h6>
+                <button class="md-button md-button--primary md-button--outline" title="Primary Button">Primary Outline</button>
+            </div>
+            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-xs">
+                <h6>Accent Button</h6>
+                <button class="md-button md-button--accent md-button--outline" title="Accent Button">Accent Outline</button>
+            </div>
+        </div>
+    </div>
+    <div class="md-container md-container--box">
+        <h2>Fab Button</h2>
+        <div class="md-grid-list">
+            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-xs">
+                <h6>Default</h6>
+                <button class="md-button md-button--raised md-button--fab" title="Default">
+                    <i class="material-icons">phone</i>
+                </button>
+            </div>
+            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-xs">
+                <h6>Primary Button</h6>
+                <button class="md-button md-button--primary md-button--fab md-button--raised" title="Primary Button">
+                    <i class="material-icons">phone</i>
+                </button>
+            </div>
+            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-xs">
+                <h6>Accent Button</h6>
+                <button class="md-button md-button--accent md-button--fab md-button--raised" title="Accent Button">
+                    <i class="material-icons">phone</i>
+                </button>
+            </div>
+            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-xs">
+                <h6>Disabled Button</h6>
+                <button class="md-button md-button--raised md-button--fab" title="Disabled Button" disabled>
+                    <i class="material-icons">phone</i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="md-container md-container--box">
+        <h2>Mini Fab Button</h2>
+        <div class="md-grid-list">
+            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-xs">
+                <h6>Default</h6>
+                <button class="md-button md-button--raised md-button--fab md-button--mini-fab" title="Default">
+                    <i class="material-icons">phone</i>
+                </button>
+            </div>
+            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-xs">
+                <h6>Primary Button</h6>
+                <button class="md-button md-button--primary md-button--fab md-button--mini-fab md-button--raised" title="Primary Button">
+                    <i class="material-icons">phone</i>
+                </button>
+            </div>
+            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-xs">
+                <h6>Accent Button</h6>
+                <button class="md-button md-button--accent md-button--fab md-button--mini-fab md-button--raised" title="Accent Button">
+                    <i class="material-icons">phone</i>
+                </button>
+            </div>
+            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-xs">
+                <h6>Disabled Button</h6>
+                <button class="md-button md-button--raised md-button--fab md-button--mini-fab" title="Disabled Button" disabled>
+                    <i class="material-icons">phone</i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="md-container md-container--box">
+        <h2>Group Button</h2>
+        <div class="md-grid-list">
+            <div class="md-grid-tile md-grid-tile--4-col">
+                <h6>Group Button with Icon</h6>
+                <div class="md-group-button is-option-selected">
+                    <button class="md-group-button__item md-button"><i class="material-icons">format_align_left</i></button>
+                    <button class="md-group-button__item md-button is-selected">
+                        <i class="material-icons">format_align_center</i>
+                    </button>
+                    <button class="md-group-button__item md-button">
+                        <i class="material-icons">format_align_right</i>
+                    </button>
+                </div>
+            </div>
+            <div class="md-grid-tile md-grid-tile--4-col">
+                <h6>Group Button with Text</h6>
+                <div class="md-group-button is-option-selected">
+                    <button class="md-group-button__item md-button">Left</button>
+                    <button class="md-group-button__item md-button is-selected">
+                        Center
+                    </button>
+                    <button class="md-group-button__item md-button">
+                        Right
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="md-container md-container--box">
+        <h2>Block Button</h2>
+        <div class="md-grid-list">
+            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-xs" style="padding: 24px">
+                <button class="md-button md-button--block" style="margin-bottom: 0">Block Button</button>
+                <button class="md-button md-button--block md-button--primary" style="margin-bottom: 0">Block Button</button>
+                <button class="md-button md-button--block md-button--accent" style="margin-bottom: 0">Block Button</button>
+                <button class="md-button md-button--block md-button--raised" style="margin-bottom: 0">Block Button</button>
             </div>
         </div>
     </div>
 </main>
+
+<button class="md-button md-button--fab is-fixed md-button--accent" title="I am fab button">
+    <i class="material-icons">add</i>
+</button>
+
 </body>
 </html>
