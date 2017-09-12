@@ -36,7 +36,7 @@
             align-items: center;
             justify-content: center;
             background-color: #fff;
-            /*padding-bottom: 24px;*/
+            padding: 12px;
         }
         .md-header__menu-button{
             width: 48px;
@@ -47,6 +47,11 @@
         }
         .md-button{
             margin-bottom: 24px;
+        }
+        @media screen and (max-width: 339px){
+            main{
+                margin-top: 32px;
+            }
         }
     </style>
 </head>
@@ -221,19 +226,19 @@
     <div class="md-container md-container--box">
         <h2>Mini Fab Button</h2>
         <div class="md-grid-list">
-            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-xs">
+            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-sm md-grid-tile--8-col-xs">
                 <h6>Default</h6>
                 <button class="md-button md-button--raised md-button--fab md-button--mini-fab" title="Default">
                     <i class="material-icons">phone</i>
                 </button>
             </div>
-            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-xs">
+            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-sm md-grid-tile--8-col-xs">
                 <h6>Primary Button</h6>
                 <button class="md-button md-button--primary md-button--fab md-button--mini-fab md-button--raised" title="Primary Button">
                     <i class="material-icons">phone</i>
                 </button>
             </div>
-            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-xs">
+            <div class="md-grid-tile md-grid-tile--4-col-md md-grid-tile--2-col-sm md-grid-tile--8-col-xs">
                 <h6>Accent Button</h6>
                 <button class="md-button md-button--accent md-button--fab md-button--mini-fab md-button--raised" title="Accent Button">
                     <i class="material-icons">phone</i>
