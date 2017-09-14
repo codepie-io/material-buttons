@@ -10,7 +10,7 @@ view and many other things to a piece of information in a web page as per requir
  The following are the different buttons with their code described elaborately:
   
       
-## 1. Flat Button 
+## I. Flat Button 
 Flat buttons are plain rectangular shaped button.
 
  **1. Default Flat Button**
@@ -73,7 +73,7 @@ Flat buttons are plain rectangular shaped button.
      <button class="md-button md-button--accent" title="Disabled Button" disabled="">Disabled</button>
        
    
-## 2. Flat Coloured Button
+## II. Flat Coloured Button
 Flat Coloured buttons as the name suggest are flat buttons filled in with colours.
   
  **1. Default Flat Coloured Button**
@@ -98,7 +98,7 @@ Flat Coloured buttons as the name suggest are flat buttons filled in with colour
       <button class="md-button md-button--flat md-button--raised md-button--accent" title="Accent Button">Accent</button>
      
       
-## 3. Raised Button
+## III. Raised Button
 Raised button gives a floating effect.
 
  **1. Default Raised Button**
@@ -141,7 +141,7 @@ Raised button gives a floating effect.
     
     <button class="md-button md-button--raised md-button--accent" title="Disabled Button" disabled="">Disabled</button>
  
-## 4. Icon Button
+## IV. Icon Button
 The buttons are represented in the form of icons.
 
  **1. Default Icon Button**
@@ -166,7 +166,7 @@ The buttons are represented in the form of icons.
     <i class="material-icons">star</i>
     </button>
     
-## 5. Outline Button
+## V. Outline Button
 These type of buttons has an outline border on four sides of the button.
    
  **1. Default Outline Button**
@@ -193,7 +193,7 @@ These type of buttons has an outline border on four sides of the button.
     <i class="material-icons">star</i>
     </button>
 
-## 6. Fab Button
+## VI. Fab Button
 Fab Button is a circular button that floats at the bottom-right of the page.
 The Fab button is placed at the highest z-index level. 
    
@@ -229,7 +229,7 @@ The Fab button is placed at the highest z-index level.
     <i class="material-icons">phone</i>
     </button>
     
-## 7. Mini Fab Button
+## VII. Mini Fab Button
 Mini fab button is the smaller size of the **Fab Button** 
    
  **1. Default Mini Fab Button**
@@ -264,7 +264,7 @@ Mini fab button is the smaller size of the **Fab Button**
     <i class="material-icons">phone</i>
     </button>
                        
-## 8. Group Button   
+## VIII. Group Button   
 Group button is used to group a series of buttons together (on a single line) in a button group:
    
  **1. Group Button with Icon**
@@ -283,7 +283,7 @@ Group button is used to group a series of buttons together (on a single line) in
     <button class="md-group-button__item md-button is-selected">Center</button>
     <button class="md-group-button__item md-button">Right</button>
                          
-## 9. Block Button    
+## IX. Block Button    
 Block button is used to group a series of buttons together to form a vertical block (one after another) in a button group:
       
    To display a block of button use the code below:
@@ -295,4 +295,4 @@ Block button is used to group a series of buttons together to form a vertical bl
                      
                         
 ## Demo
- <a href="https://codeartisan-ui.github.io/material-buttons/" target="_blank">material-buttons</a>
+ <a href="https://codeartisan-ui.github.io/material-buttons/" target="_blank">Material Buttons</a>
