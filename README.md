@@ -288,10 +288,10 @@ Block button is used to group a series of buttons together to form a vertical bl
       
    To display a block of button use the code below:
    
-    <button class="md-button md-button--block" style="margin-bottom: 0">Block Button</button>
-    <button class="md-button md-button--block md-button--primary" style="margin-bottom: 0">Block Button</button>
-    <button class="md-button md-button--block md-button--accent" style="margin-bottom: 0">Block Button</button>
-    <button class="md-button md-button--block md-button--raised" style="margin-bottom: 0">Block Button</button>
+    <button class="md-button md-button--block">Block Button</button>
+    <button class="md-button md-button--block md-button--primary">Block Button</button>
+    <button class="md-button md-button--block md-button--accent">Block Button</button>
+    <button class="md-button md-button--block md-button--raised">Block Button</button>
                      
                         
 ## Demo
