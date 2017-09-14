@@ -23,10 +23,10 @@ Flat buttons are plain rectangular shaped button.
    To include default button in your website use the class:
          
          
-         
-      ```
-      <button class="md-button" title="Default">Default</button>
-      ```
+     
+  ```
+  <button class="md-button" title="Default">Default</button>
+  ```
     
  2. **Primary Flat Button** 
   
